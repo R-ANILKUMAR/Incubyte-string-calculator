@@ -1,0 +1,14 @@
+{
+  "name": "incubyte-string-number-calculator",
+  "version": "1.0.0",
+  "description": "It is a function that takes a stringified number and calculates the total of numbers in the string, the string can contain any alphabetical letter and any special character.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
