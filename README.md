@@ -18,7 +18,7 @@
 
 # install node modules with
 
-# npm install.
+# npm install
 
 # run the following command to validate the test cases
 
