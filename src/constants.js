@@ -8,23 +8,23 @@ export const testData = {
         output: 1,
     },
     onlyOneNumberWithSpecialChars: {
-        input: '1,*(*)',
-        output: 1,
+        input: "//;\n[];2",
+        output: 2,
     },
     onlyOneNumberWithNextLineEscapeAndSpecialChars: {
         input: "//;\n1;2",
-        output: 1,
+        output: 3,
     },
     twoOrMoreNumbers: {
         input: '8932',
-        output: 89,
+        output: 8932,
     },
     twoOrMoreNumbersWithSpecialChars: {
-        input: '800**)(&^&%**)(&^&%&^>??<>10&&^(*&*:">:"&90',
-        output: 900,
+        input: '**)(&^&%**)(&^&%&^>??<>&&^( //[1,2,3,4,5,6…]',
+        output: 21,
     },
     twoOrMoreNumbersNextLineEscapeAndSpecialChars: {
-        input: "1024//;100\n1;200&&^*)(*)",
-        output: 1,
+        input: "1024//;100\n1;200&&^*)(*)**)(&^&%**)(&^&%&^>??<>&&^(   //\n[1,2,3,4,5,6…]",
+        output: 1346,
     },
 }

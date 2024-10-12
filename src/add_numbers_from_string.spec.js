@@ -14,4 +14,20 @@ describe("add numbers from string unit test cases", () => {
         const givenOutput = add(testData.onlyOneNumberWithSpecialChars.input);
         expect(givenOutput).toBe(testData.onlyOneNumberWithSpecialChars.output);
     });
+    test("it should return only one number if the input string contains one number with special chars and next line escape", () => {
+        const givenOutput = add(testData.onlyOneNumberWithNextLineEscapeAndSpecialChars.input);
+        expect(givenOutput).toBe(testData.onlyOneNumberWithNextLineEscapeAndSpecialChars.output);
+    });
+    test("it should return total numbers if the input string contains two or more numbers", () => {
+        const givenOutput = add(testData.twoOrMoreNumbers.input);
+        expect(givenOutput).toBe(testData.twoOrMoreNumbers.output);
+    });
+    test("it should return total numbers if the input string contains two or more numbers with special chars", () => {
+        const givenOutput = add(testData.twoOrMoreNumbersWithSpecialChars.input);
+        expect(givenOutput).toBe(testData.twoOrMoreNumbersWithSpecialChars.output);
+    });
+    test("it should return total numbers if the input string contains two or more numbers with special chars and next escape", () => {
+        const givenOutput = add(testData.twoOrMoreNumbersNextLineEscapeAndSpecialChars.input);
+        expect(givenOutput).toBe(testData.twoOrMoreNumbersNextLineEscapeAndSpecialChars.output);
+    });
 });
