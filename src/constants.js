@@ -15,8 +15,16 @@ export const testData = {
         input: "//;\n1;2",
         output: 1,
     },
-    twoNumbers: {
-        input: '89',
+    twoOrMoreNumbers: {
+        input: '8932',
         output: 89,
+    },
+    twoOrMoreNumbersWithSpecialChars: {
+        input: '800**)(&^&%**)(&^&%&^>??<>10&&^(*&*:">:"&90',
+        output: 900,
+    },
+    twoOrMoreNumbersNextLineEscapeAndSpecialChars: {
+        input: "1024//;100\n1;200&&^*)(*)",
+        output: 1,
     },
 }
